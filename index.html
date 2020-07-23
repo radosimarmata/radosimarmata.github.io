@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Todo</title>
+</head>
+
+<body>
+
+    <div id="app" class="container">
+
+        <div class="form-group">
+            <h1 class="text-center">PENTASI TODO</h1>
+            <input type="text" class="form-control" name="todo" id="todo" placeholder="Ketik disini . . ." v-model="todo" @keyup.enter="addTodo">
+            <button class="btn btn-primary" @click="addTodo()" style="margin-top: 8px;">Submit</button>
+        </div>
+
+        <table class="table" v-if="todos.length > 0">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Todo</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody v-for="(todo, index) in todos" :key="index">
+                <td scope="row">{{index}}</td>
+                <td>{{todo}}</td>
+                <td>
+                    <button class="btn btn-danger" @click="deleteTodo(index)">Delete</button>
+                </td>
+            </tbody>
+        </table>
+        <h3 class="text-center" v-else>Tidak ada Kegiatan</h3>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    todos: [],
+                    todo: ""
+                }
+            },
+            created() {
+                this.loadLocalStorage();
+            },
+            watch: {
+                todos() {
+                    localStorage.setItem("todos", JSON.stringify(this.todos));
+                }
+            },
+            methods: {
+                loadLocalStorage() {
+                    const ls = JSON.parse(localStorage.getItem("todos"))
+                    console.log(ls)
+                    if (ls == null) {
+                        return;
+                    }
+                    this.todos = ls;
+                    console.log(this.todos);
+                },
+                addTodo() {
+                    this.todos.push(this.todo);
+                    this.todo = "";
+                },
+                deleteTodo(index) {
+                    this.todos.splice(index, 1);
+                }
+            }
+        })
+    </script>
+</body>
+<footer>
+	<p align="center">Rado HT Simarmata</p>
+	<p align="center">2020</p>
+</footer>
+</html>
