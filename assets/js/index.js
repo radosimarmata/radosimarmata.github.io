@@ -14,10 +14,6 @@ $('#download-cv').on('click', (e) => {
   document.body.removeChild(link);
 });
 
-// document.getElementById('hamburger').onclick = function() {
-//   document.getElementsByClassName("toggle").classList.toggle('hidden');
-// };
-
 document.getElementById("menunav").onclick = function toggleMenu() {
   const navToggle = document.getElementsByClassName("toggle");
   for (let i = 0; i < navToggle.length; i++) {
