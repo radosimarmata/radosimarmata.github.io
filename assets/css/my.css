@@ -1,3 +1,38 @@
-html {
-  scroll-behavior: smooth;
+/* @keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+
+
+/* @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+.typing-animation {
+  animation: typing 2s steps(20) infinite alternate, blink 0.7s infinite;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+    visibility: visible;
+  }
+  to {
+    width: calc(100% + 30px);
+  }
+}
+
+.animate-typing {
+  animation: typing 2s steps(10) infinite alternate;
 }
