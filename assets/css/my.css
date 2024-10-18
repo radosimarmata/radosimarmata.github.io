@@ -1,27 +1,53 @@
-/* @keyframes typing {
+body { 
+  font-family: 'Montserrat', sans-serif;
+}
+.bg-header {
+  background: linear-gradient(90deg, #00396E 60%, #AC0027 100%);
+}
+
+.bg-home {
+  background: linear-gradient(90deg, #00396E 60%, #AC0027 100%);
+}
+
+.bg-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/clouds.png");
+  background-size: 50%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  animation: slide-in 5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in {
   0% {
-    width: 0%;
-    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0);
   }
   100% {
-    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
   }
-} */
-
-
-
-/* @keyframes blink {
-  50% {
-    border-color: transparent;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
   100% {
-    border-color: white;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.typing-animation {
-  animation: typing 2s steps(20) infinite alternate, blink 0.7s infinite;
-} */
+.animate-slide-up {
+  animation: slide-up 3s ease forwards;
+}
 
 @keyframes typing {
   from {
@@ -29,10 +55,13 @@
     visibility: visible;
   }
   to {
-    width: calc(100% + 30px);
+    width: calc(100% + 10px);
   }
 }
 
 .animate-typing {
   animation: typing 2s steps(10) infinite alternate;
 }
+
+
+
