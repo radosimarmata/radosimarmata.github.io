@@ -21,13 +21,20 @@ body {
   background-position: right bottom;
   background-repeat: no-repeat;
   animation: slide-in 5s ease forwards;
-  opacity: 0;
+  opacity: 1;
+  pointer-events: none;
+  /* z-index: 0; */
+}
+
+.main-content {
+  position: relative;
+  /* z-index: 1; */
 }
 
 @keyframes slide-in {
   0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(20);
   }
   100% {
     opacity: 1;

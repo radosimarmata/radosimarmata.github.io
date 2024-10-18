@@ -33,14 +33,14 @@
     <title>Rado HT Simarmata</title>
   </head>
   <body class="text-white">
-    <header class="flex flex-col items-center justify-between lg:flex-row">
-      <nav class="fixed top-0 w-full bg-header">
+    <header class="flex flex-col lg:flex-row items-center justify-between">
+      <nav class="fixed top-0 w-full bg-header z-50">
         <div
           class="container mx-auto px-4 flex justify-between items-center py-2"
         >
           <div class="flex justify-center items-center space-x-2">
             <a
-              class="text-lg font-bold"
+              class="text-lg font-bold cursor-pointer"
               href="#home"
               >RADOMEN</a>
           </div>
@@ -114,19 +114,57 @@
       </nav>
     </header>
     <main>
-      <section id="home" name="home" class="flex h-screen w-full items-center justify-center bg-home">
+      <section id="home" name="home" class="flex h-screen w-full items-center justify-center bg-home z-0">
         <div class="max-w-7xl flex flex-col lg:flex-row justify-center items-center">
           <div class="flex justify-center lg:hidden">
             <img src="./assets/img/website-design-launch-min.png" class="max-w-xs" />
           </div>
-          <div class="w-full flex flex-col space-y-2 justify-center items-center lg:items-start lg:justify-start">
-            <h1 class="text-sm text-center">ID - Software Engineer</h1>
-            <h2 class="text-5xl lg:text-8xl font-bold text-center">RADO HT SIMARMATA</h2>
-            <p class="text-xs text-center">Selamat datang di portofolio saya! Saya seorang Software Engineer dengan pengalaman dalam berbagai teknologi dan proyek.</p>
+          <div class="w-full flex flex-col space-y-2 justify-center items-center lg:items-start lg:justify-start px-4">
+            <h1 class="text-lg text-center">Hello, It's me</h1>
+            <h2 class="text-5xl lg:text-8xl font-extrabold text-center lg:text-start cursor-pointer">RADO HT SIMARMATA</h2>
+            <p class="text-xl text-center lg:text-start font-light">And I'm a <span class="text-pink-700 font-bold">Software Engineer</span></p>
           </div>
           <div class="flex justify-center hidden lg:block">
             <img src="./assets/img/website-design-launch-min.png" class="max-w-lg animate-slide-up"/>
+          </div>
         </div>
+      </section>
+      <section id="about" name="about" class="relative w-full min-h-80 flex justify-center items-center -mt-20 z-0">
+        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" name="projects" class="w-full h-screen flex justify-center items-center">
+        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
+            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+          </div>
         </div>
       </section>
     </main>
