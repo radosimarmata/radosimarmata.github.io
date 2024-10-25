@@ -31,6 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/my.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Rado HT Simarmata</title>
   </head>
   <body class="text-white">
@@ -91,6 +92,13 @@
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
+                  href="#experience"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
                   href="#projects"
                   >Projects</a
                 >
@@ -117,16 +125,17 @@
     <main>
       <section id="home" name="home" class="flex h-screen w-full items-center justify-center bg-home z-0">
         <div class="max-w-7xl flex flex-col lg:flex-row justify-center items-center">
-          <div class="flex justify-center lg:hidden">
-            <img src="./assets/img/website-design-launch-min.png" class="max-w-xs" />
+          <div class="flex justify-center lg:hidden border-b-4 mb-4">
+            <img src="./assets/img/file.png" class="w-xs h-80" />
+          </div>
+          <div class="flex justify-center hidden lg:block p-4">
+            <img src="./assets/img/file.png" class="max-w-xs animate-slide-up border-b-4" />
           </div>
           <div class="w-full flex flex-col space-y-2 justify-center items-center lg:items-start lg:justify-start px-4">
             <h1 class="text-lg text-center">Hello, It's me</h1>
             <h2 class="text-5xl lg:text-8xl font-extrabold text-center lg:text-start cursor-pointer">RADO HT SIMARMATA</h2>
             <p class="text-xl text-center lg:text-start font-light">And I'm  <span id="typed-output" class="text-pink-700 font-bold"></span></p>
-          </div>
-          <div class="flex justify-center hidden lg:block">
-            <img src="./assets/img/website-design-launch-min.png" class="max-w-lg animate-slide-up"/>
+            <a class="border rounded-md px-4 py-2 bg-yellow-500 text-sm font-semibold text-black cursor-pointer hover:bg-yellow-600" href="#about">About Me</a>
           </div>
         </div>
       </section>
@@ -169,6 +178,57 @@
         </div>
       </section>
     </main>
+    <footer class="bg-header text-sm">
+      <div class="mx-auto w-full max-w-7xl p-4">
+        <div class="flex flex-col md:flex-row md:px-10 justify-between">
+          <div class="md:w-1/3 px-4 space-y-4">
+            <h1 class="text-lg">Rado's Portfolio</h1>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+          </div>
+          <div class="md:w-1/3 px-4 space-y-4">
+            <h1 class="text-lg">Link</h1>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="hover:underline hover:text-yellow-500 cursor-pointer">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="hover:underline cursor-pointer">About</a>
+              </li>
+              <li>
+                <a href="#experience" class="hover:underline cursor-pointer">Experience</a>
+              </li>
+              <li>
+                <a href="#projects" class="hover:underline cursor-pointer">Projects</a>
+              </li>
+              <li>
+                <a href="#skills" class="hover:underline cursor-pointer">Skills</a>
+              </li>
+              <li>
+                <a href="#contact" class="hover:underline cursor-pointer">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 px-4 space-y-4">
+            <h1 class="text-lg">Contact</h1>
+            <ul class="space-y-2">
+              <li>
+                <i class="fab fa-whatsapp text-lg"></i>
+                <a href="https://wa.me/6282175123834" target="_blank" rel="noopener noreferrer">
+                  +62 821 7512 3834
+              </a>
+              </li>
+              <li>
+                <i class="far fa-envelope text-lg"></i> simarmatarado@gmail.com
+              </li>
+              <li>
+                <i class="fab fa-github text-lg"></i>
+                <a href="https://github.com/radosimarmata" target="_blank" rel="noopener noreferrer">github.com/radosimarmata</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./assets/js/index.js"></script>
 </html>
