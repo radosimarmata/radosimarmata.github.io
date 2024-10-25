@@ -55,20 +55,3 @@ body {
 .animate-slide-up {
   animation: slide-up 3s ease forwards;
 }
-
-@keyframes typing {
-  from {
-    width: 0;
-    visibility: visible;
-  }
-  to {
-    width: calc(100% + 10px);
-  }
-}
-
-.animate-typing {
-  animation: typing 2s steps(10) infinite alternate;
-}
-
-
-
