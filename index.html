@@ -213,22 +213,39 @@
       </section>
       <section id="projects" name="projects" class="w-full md:h-screen flex flex-col justify-center items-center">
         <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Projects</h2>
-        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
-            <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
+        <!-- Carousel Container -->
+        <div class="relative w-full max-w-7xl px-8">
+          <!-- Carousel Wrapper -->
+          <div class="flex overflow-hidden">
+            <div class="flex transition-transform duration-500 ease-in-out w-full">
+              <!-- Slide 1 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+              <!-- Slide 2 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+              <!-- Slide 3 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
-            <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
-          </div>
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
-            <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
-          </div>
+      
+          <!-- Carousel Navigation (Previous and Next Buttons) -->
+          <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(-1)">
+            &#10094;
+          </button>
+          <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(1)">
+            &#10095;
+          </button>
         </div>
       </section>
     </main>

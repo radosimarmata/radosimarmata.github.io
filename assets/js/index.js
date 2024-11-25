@@ -30,3 +30,23 @@ const options = {
 };
 
 const typed = new Typed("#typed-output", options);
+
+let currentSlide = 0;
+
+// Function to move slides
+function moveSlide(direction) {
+  const slides = document.querySelector('.flex.transition-transform');
+  const totalSlides = document.querySelectorAll('.flex.transition-transform > div').length;
+  currentSlide += direction;
+
+  // Ensure slides loop around
+  if (currentSlide < 0) {
+    currentSlide = totalSlides - 1;
+  } else if (currentSlide >= totalSlides) {
+    currentSlide = 0;
+  }
+
+  // Move slides
+  const slideWidth = document.querySelector('.flex').offsetWidth;
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
