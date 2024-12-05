@@ -21,11 +21,11 @@
       href="https://unpkg.com/heroicons@2.0.13/css/heroicons.min.css"
       rel="stylesheet"
     />
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
       integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -43,11 +43,11 @@
           <div class="flex justify-center items-center space-x-2">
             <a
               class="text-lg font-bold cursor-pointer"
-              href="#home"
+              href="/#home"
               >RADOMEN</a>
           </div>
           <div class="flex md:hidden">
-            <button id="menunav">
+            <button id="menunav" aria-label="Open menu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -85,35 +85,35 @@
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
-                  href="#about"
+                  href="/#about"
                   >About</a
                 >
               </li>
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
-                  href="#experience"
+                  href="/#experience"
                   >Experience</a
                 >
               </li>
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
-                  href="#projects"
+                  href="/#projects"
                   >Projects</a
                 >
               </li>
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
-                  href="#skills"
+                  href="/#skills"
                   >Skills</a
                 >
               </li>
               <li>
                 <a
                   class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
-                  href="#contact"
+                  href="/#contact"
                   >Contact</a
                 >
               </li>
@@ -126,16 +126,16 @@
       <section id="home" name="home" class="flex h-screen w-full items-center justify-center bg-home z-0">
         <div class="max-w-7xl flex flex-col lg:flex-row justify-center items-center">
           <div class="flex justify-center lg:hidden border-b-4 mb-4">
-            <img src="./assets/img/file.png" class="w-xs h-80" />
+            <img src="./assets/img/file.webp" class="w-xs h-80" alt="RADO HT SIMARMATA" />
           </div>
           <div class="flex justify-center hidden lg:block p-4">
-            <img src="./assets/img/file.png" class="max-w-xs animate-slide-up border-b-4" />
+            <img src="./assets/img/file.webp" class="max-w-xs animate-slide-up border-b-4" alt="RADO HT SIMARMATA"/>
           </div>
           <div class="w-full flex flex-col space-y-2 justify-center items-center lg:items-start lg:justify-start px-4">
             <h1 class="text-lg text-center">Hello, It's me</h1>
             <h2 class="text-5xl lg:text-8xl font-extrabold text-center lg:text-start cursor-pointer">RADO HT SIMARMATA</h2>
             <p class="text-xl text-center lg:text-start font-light">And I'm  <span id="typed-output" class="text-pink-700 font-bold"></span></p>
-            <a class="border rounded-md px-4 py-2 bg-yellow-500 text-sm font-semibold text-black cursor-pointer hover:bg-yellow-600" href="#about">About Me</a>
+            <a class="border rounded-md px-4 py-2 bg-yellow-500 text-sm font-semibold text-black cursor-pointer hover:bg-yellow-600" href="/#about">About Me</a>
           </div>
         </div>
       </section>
@@ -143,17 +143,17 @@
         <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">About</h2>
         <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
             <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
             <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
           </div>
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
             <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
             <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
           </div>
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8"/>
+            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
             <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
             <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
           </div>
@@ -164,10 +164,10 @@
         <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] w-full group">
             <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
-              <img src="./assets/img/dsi.png" class="border rounded-lg w-36" />
+              <img src="./assets/img/dsi.webp" class="border rounded-lg w-36" alt="data sains inteknova"/>
               <div>
-                <h5 class="text-sm font-bold">Data Sains Inteknova</h5>
-                <h5 class="text-sm font-base">Software Engineer</h5>
+                <h3 class="text-sm font-bold">Data Sains Inteknova</h3>
+                <h4 class="text-sm font-base">Software Engineer</h4>
                 <h5 class="text-xs font-thin">March 2022 - now</h5>
               </div>
             </div>
@@ -181,10 +181,10 @@
           </div>
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] group">
             <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
-              <img src="./assets/img/insoft.png" class="border rounded-lg w-36" />
+              <img src="./assets/img/insoft.webp" class="border rounded-lg w-36" alt="insoft"/>
               <div>
-                <h5 class="text-sm font-bold">Insoft Asia</h5>
-                <h5 class="text-sm font-base">Software Engineer</h5>
+                <h3 class="text-sm font-bold">Insoft Asia</h3>
+                <h4 class="text-sm font-base">Software Engineer</h4>
                 <h5 class="text-xs font-thin">March 2021 - February 2022</h5>
               </div>
             </div>
@@ -197,10 +197,10 @@
 
           <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] group">
             <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
-              <img src="./assets/img/pentasi.png" class="border rounded-lg w-36" />
+              <img src="./assets/img/pentasi.png" class="border rounded-lg w-36" alt="pentasi"/>
               <div>
-                <h5 class="text-sm font-bold">Pentasi</h5>
-                <h5 class="text-sm font-base">Software Engineer Jr.</h5>
+                <h3 class="text-sm font-bold">Pentasi</h3>
+                <h4 class="text-sm font-base">Software Engineer Jr.</h4>
                 <h5 class="text-xs font-thin">August 2020 - January 2021</h5>
               </div>
             </div>
@@ -220,19 +220,56 @@
             <div class="flex transition-transform duration-500 ease-in-out w-full">
               <!-- Slide 1 -->
               <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development" />
                 <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
                 <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
               </div>
               <!-- Slide 2 -->
               <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
                 <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
                 <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
               </div>
               <!-- Slide 3 -->
               <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" />
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
+                <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Carousel Navigation (Previous and Next Buttons) -->
+          <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(-1)">
+            &#10094;
+          </button>
+          <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+      <section id="skills" name="skills" class="w-full md:h-screen flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Projects</h2>
+        <!-- Carousel Container -->
+        <div class="relative w-full max-w-7xl px-8">
+          <!-- Carousel Wrapper -->
+          <div class="flex overflow-hidden">
+            <div class="flex transition-transform duration-500 ease-in-out w-full">
+              <!-- Slide 1 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development" />
+                <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+              <!-- Slide 2 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
+                <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
+                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+              </div>
+              <!-- Slide 3 -->
+              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
+                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
                 <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
                 <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
               </div>
@@ -260,22 +297,22 @@
             <h1 class="text-lg">Link</h1>
             <ul class="space-y-2">
               <li>
-                <a href="#home" class="hover:underline hover:text-yellow-500 cursor-pointer">Home</a>
+                <a href="/#home" class="hover:underline hover:text-yellow-500 cursor-pointer">Home</a>
               </li>
               <li>
-                <a href="#about" class="hover:underline cursor-pointer">About</a>
+                <a href="/#about" class="hover:underline cursor-pointer">About</a>
               </li>
               <li>
-                <a href="#experience" class="hover:underline cursor-pointer">Experience</a>
+                <a href="/#experience" class="hover:underline cursor-pointer">Experience</a>
               </li>
               <li>
-                <a href="#projects" class="hover:underline cursor-pointer">Projects</a>
+                <a href="/#projects" class="hover:underline cursor-pointer">Projects</a>
               </li>
               <li>
-                <a href="#skills" class="hover:underline cursor-pointer">Skills</a>
+                <a href="/#skills" class="hover:underline cursor-pointer">Skills</a>
               </li>
               <li>
-                <a href="#contact" class="hover:underline cursor-pointer">Contact</a>
+                <a href="/#contact" class="hover:underline cursor-pointer">Contact</a>
               </li>
             </ul>
           </div>
@@ -284,7 +321,7 @@
             <ul class="space-y-2">
               <li class="flex justify-center items-center space-x-2">
                 <i class="fab fa-whatsapp text-lg"></i>
-                <a href="https://wa.me/6282175123834" target="_blank" rel="noopener noreferrer">+62 821 7512 3834 </a>
+                <a href="https://wa.me/6282175123834" target="_blank" rel="follow noopener noreferrer">+62 821 7512 3834 </a>
               </li>
               <li class="flex justify-center items-center space-x-2">
                 <i class="far fa-envelope text-lg"></i>
@@ -292,7 +329,7 @@
               </li>
               <li class="flex justify-center items-center space-x-2">
                 <i class="fab fa-github text-lg"></i>
-                <a href="https://github.com/radosimarmata" target="_blank" rel="noopener noreferrer">github.com/radosimarmata</a>
+                <a href="https://github.com/radosimarmata" target="_blank" rel="follow noopener noreferrer">github.com/radosimarmata</a>
               </li>
             </ul>
           </div>
