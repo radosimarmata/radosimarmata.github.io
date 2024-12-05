@@ -42,7 +42,7 @@
         >
           <div class="flex justify-center items-center space-x-2">
             <a
-              class="text-lg font-bold cursor-pointer"
+              class="text-lg font-bold cursor-pointer transition-all duration-300 hover:text-2xl"
               href="/#home"
               >RADOMEN</a>
           </div>
@@ -141,22 +141,9 @@
       </section>
       <section id="about" name="about" class="relative w-full md:h-screen flex flex-col justify-center items-center">
         <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">About</h2>
-        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md">
-            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-            <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
-          </div>
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-            <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
-          </div>
-          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-            <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-            <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
-            <p class="text-sm text-center">Bringing your vision and designs to life with precision coding  and integrated innovative solutions.</p>
-          </div>
+        <div class="max-w-6xl py-2 px-8 text-black text-center">
+          <p>I am an experienced <b>software developer</b> who has developed various technological solutions for multiple industries. With expertise in implementing end-to-end systems, from planning to development and deployment, I create <i>responsive, efficient, and user-friendly</i> applications for both web and mobile platforms. </p>
+          <p>For me, technology is a tool to solve real-world problems. With a collaborative and solution-oriented approach, I strive to deliver <b>innovations</b> that are relevant to client needs and industry demands.</p>
         </div>
       </section>
       <section id="experience" name="experience" class="w-full md:h-screen flex flex-col justify-center items-center">
@@ -213,76 +200,102 @@
       </section>
       <section id="projects" name="projects" class="w-full md:h-screen flex flex-col justify-center items-center">
         <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Projects</h2>
-        <!-- Carousel Container -->
-        <div class="relative w-full max-w-7xl px-8">
-          <!-- Carousel Wrapper -->
-          <div class="flex overflow-hidden">
-            <div class="flex transition-transform duration-500 ease-in-out w-full">
-              <!-- Slide 1 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development" />
-                <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/patunganproperti.webp" alt="Patungan Property">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
               </div>
-              <!-- Slide 2 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-                <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
-              </div>
-              <!-- Slide 3 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-                <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Patungan Properti</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Patungan Properti is a digital platform that enables collective property investment through a community-based model. This project is designed to provide wider access for people to invest in the property sector without requiring a large capital. Through a transparent and secure system, the platform connects investors with promising property opportunities.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://www.patunganproperti.com/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
               </div>
             </div>
           </div>
-      
-          <!-- Carousel Navigation (Previous and Next Buttons) -->
-          <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(1)">
-            &#10095;
-          </button>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/desya.webp" alt="Market Analys">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Market Analys</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Market Analis is a platform designed to provide comprehensive and in-depth market data analysis. This project aims to assist users, both individuals and businesses, in understanding market trends, making better business decisions, and enhancing competitiveness through accurate and relevant data.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://depositosyariah.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/desya.webp" alt="Deposito Syariah">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Deposito Syariah</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Deposito Syariah are term deposit products managed based on Islamic Sharia principles. These deposits offer fair and transparent returns without usury, with profits derived from halal business activities. Ideal for individuals seeking to invest their funds safely in accordance with Sharia values, Deposito Syariah provide competitive returns and guaranteed fund security. With various maturity options, Deposito Syariah are a profitable investment solution aligned with Islamic financial principles.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://depositosyariah.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/kasku.webp" alt="Kasku">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">KASKU</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">KASKU is a dynamic payment application designed for businesses, available on both Android and web platforms. It streamlines financial transactions, offering a seamless and efficient payment experience for companies of all sizes. With KASKU, managing corporate payments becomes easier and more intuitive, empowering businesses to focus on growth and innovation.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://www.kasku.co.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/metamine.webp" alt="Metamine">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Metamine</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Metamine is a cutting-edge real-time vehicle monitoring application. It provides comprehensive tracking and management features, allowing users to monitor vehicle locations, performance, and status in real-time. Designed for both personal and commercial use, Metamine enhances vehicle security and efficiency by offering instant alerts and detailed reports. With Metamine, you can ensure your vehicles are always under your control, optimizing operations and ensuring peace of mind.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://metamine.datasains.co.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="skills" name="skills" class="w-full md:h-screen flex flex-col justify-center items-center">
-        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Projects</h2>
-        <!-- Carousel Container -->
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">SKILL</h2>
         <div class="relative w-full max-w-7xl px-8">
-          <!-- Carousel Wrapper -->
-          <div class="flex overflow-hidden">
-            <div class="flex transition-transform duration-500 ease-in-out w-full">
-              <!-- Slide 1 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development" />
-                <h3 class="text-xl font-bold">WEB DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
-              </div>
-              <!-- Slide 2 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-                <h3 class="text-xl font-bold">ANDROID DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
-              </div>
-              <!-- Slide 3 -->
-              <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8">
-                <img src="./assets/img/website-development-services-1.png" class="p-8" alt="website development"/>
-                <h3 class="text-xl font-bold">IoT DEVELOPMENT</h3>
-                <p class="text-sm text-center">Bringing your vision and designs to life with precision coding and integrated innovative solutions.</p>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Carousel Navigation (Previous and Next Buttons) -->
-          <button class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-[#00396E] rounded-full p-2" onclick="moveSlide(1)">
-            &#10095;
-          </button>
         </div>
       </section>
     </main>
