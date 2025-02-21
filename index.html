@@ -3,60 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Rado HT Simarmata, showcasing projects, skills, and experience in web development, AI, and more." />
+    <meta name="keywords" content="Rado HT Simarmata, portfolio, web development, AI, Flutter, Node.js, software engineer" />
+    <meta name="author" content="Rado HT Simarmata" />
+    <meta property="og:title" content="Rado HT Simarmata - Portfolio" />
+    <meta property="og:description" content="Explore the projects and skills of Rado HT Simarmata in web development, AI, and software engineering." />
+    <meta property="og:image" content="./assets/img/logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://radosimarmata.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rado HT Simarmata - Portfolio" />
+    <meta name="twitter:description" content="Showcasing the skills and projects of Rado HT Simarmata in web development, AI, and more." />
+    <meta name="twitter:image" content="./assets/img/logo.png" />
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://unpkg.com/heroicons@2.0.13/css/heroicons.min.css"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-      crossorigin="anonymous"
-    ></script>
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/my.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Rado HT Simarmata</title>
   </head>
-  <body class="dark:bg-gray-800">
-    <header class="flex flex-col items-center justify-between lg:flex-row">
-      <nav class="fixed top-0 w-full bg-gray-100 dark:bg-gray-900">
+  <body class="text-white">
+    <header class="flex flex-col lg:flex-row items-center justify-between">
+      <nav class="fixed top-0 w-full bg-header z-50">
         <div
           class="container mx-auto px-4 flex justify-between items-center py-2"
         >
-          <div class="flex flex-row justify-center items-center">
+          <div class="flex justify-center items-center space-x-2">
             <a
-              class="text-gray-800 dark:text-white text-lg font-bold"
-              href="#home"
-              >RADOMEN</a
-            >
-            <div class="md:flex justify-center md:items-center">
-              <button
-                onclick="(() => document.body.classList.toggle('dark'))()"
-                class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <svg
-                  class="fill-violet-700 block dark:hidden"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <svg
-                  class="fill-yellow-500 hidden dark:block"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+              class="text-lg font-bold cursor-pointer transition-all duration-300 hover:text-2xl"
+              href="/#home"
+              >RADOMEN</a>
           </div>
           <div class="flex md:hidden">
-            <button id="menunav">
+            <button id="menunav" aria-label="Open menu">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -90,33 +76,33 @@
           <div
             class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-blue-900 dark:border-amber-800 md:border-none"
           >
-            <ul class="md:flex md:space-x-6 text-gray-600 dark:text-white">
+            <ul class="md:flex md:space-x-6">
               <li>
                 <a
-                  class="nav-link page-scroll block md:inline-block text-blue-900 dark:text-amber-400 hover:text-blue-500 dark:hover:text-amber-300 px-3 py-3 border-b-2 border-blue-900 dark:border-amber-800 md:border-none"
-                  href="#about"
+                  class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
+                  href="/#about"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  class="nav-link page-scroll block md:inline-block text-blue-900 dark:text-amber-400 hover:text-blue-500 dark:hover:text-amber-300 px-3 py-3 border-b-2 border-blue-900 dark:border-amber-800 md:border-none"
-                  href="#projects"
+                  class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
+                  href="/#experience"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
+                  href="/#projects"
                   >Projects</a
                 >
               </li>
               <li>
                 <a
-                  class="nav-link page-scroll block md:inline-block text-blue-900 dark:text-amber-400 hover:text-blue-500 dark:hover:text-amber-300 px-3 py-3 border-b-2 border-blue-900 dark:border-amber-800 md:border-none"
-                  href="#skills"
+                  class="nav-link page-scroll block md:inline-block px-3 py-3 border-b-2 border-blue-900 md:border-none hover:text-blue-500 hover:font-semibold"
+                  href="/#skills"
                   >Skills</a
-                >
-              </li>
-              <li>
-                <a
-                  class="nav-link page-scroll block md:inline-block text-blue-900 dark:text-amber-400 hover:text-blue-500 dark:hover:text-amber-300 px-3 py-3 border-b-2 border-blue-900 dark:border-amber-800 md:border-none"
-                  href="#contact"
-                  >Contact</a
                 >
               </li>
             </ul>
@@ -125,253 +111,284 @@
       </nav>
     </header>
     <main>
-      <section id="home" name="home" class="flex h-screen flex-col-reverse items-center justify-center text-center md:flex-row">
-        <div class="flex flex-col items-center md:w-1/2">
-          <div class="mb-4">
-            <h1 class="text-3xl font-bold text-black dark:text-white">
-              Hi There! I'm
-              <span class="text-sky-600 dark:text-amber-400">Rado</span>
-            </h1>
-            <p class="mt-6 text-xl dark:text-white">
-              I'm Software engineer based in Jakarta
-            </p>
+      <section id="home" name="home" class="flex h-screen w-full items-center justify-center bg-home z-0">
+        <div class="max-w-7xl flex flex-col lg:flex-row justify-center items-center">
+          <div class="flex justify-center lg:hidden border-b-4 mb-4">
+            <img src="./assets/img/file.webp" class="w-xs h-80" alt="RADO HT SIMARMATA" />
           </div>
-          <div class="mb-10">
-            <button
-              class="flex items-center group"
-              id="download-cv"
-              name="download-cv"
-            >
-              <span
-                class="bg-blue-500 dark:bg-amber-400 border-y border-l border-blue-500 dark:border-amber-500 text-white dark:text-black font-bold py-2 px-4 rounded-l group-hover:bg-blue-600 dark:group-hover:bg-amber-600"
-              >
-                Download CV
-              </span>
-              <div
-                class="bg-white dark:bg-gray-900 border-y border-r border-blue-500 dark:border-amber-500 text-blue-500 dark:text-amber-500 p-2 rounded-r group-hover:bg-blue-200 dark:group-hover:bg-amber-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  />
-                </svg>
+          <div class="flex justify-center hidden lg:block p-4">
+            <img src="./assets/img/file.webp" class="max-w-xs animate-slide-up border-b-4" alt="RADO HT SIMARMATA"/>
+          </div>
+          <div class="w-full flex flex-col space-y-2 justify-center items-center lg:items-start lg:justify-start px-4">
+            <h1 class="text-lg text-center">Hello, It's me</h1>
+            <h2 class="text-5xl lg:text-8xl font-extrabold text-center lg:text-start cursor-pointer">RADO HT SIMARMATA</h2>
+            <p class="text-xl text-center lg:text-start font-light">And I'm  <span id="typed-output" class="text-pink-700 font-bold"></span></p>
+            <a class="border rounded-md px-4 py-2 bg-yellow-500 text-sm font-semibold text-black cursor-pointer hover:bg-yellow-600" href="/#about">About Me</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" name="about" class="relative w-full md:h-screen flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">About</h2>
+        <div class="max-w-6xl py-2 px-8 text-black text-center space-y-8">
+          <p>I am a passionate <b>software developer</b> with several years of experience in building innovative applications and systems. I specialize in developing solutions across <b>frontend, backend, Android, and IoT</b> platforms, with a strong focus on integrating <i>real-time data and GPS technologies</i>.</p>
+
+          <p>My expertise spans a wide range of technologies, allowing me to create efficient and scalable solutions. I have had the opportunity to work on projects across multiple industries, including <b>mining, hotels, banks, cooperatives, and clinics</b>. This diverse experience has equipped me with the ability to tailor solutions to meet various business needs while ensuring optimal performance and user experience.</p>
+
+          <div class="mt-6">
+            <a href="assets/document/CV_RADO_HT_SIMARMATA.pdf" 
+              download="CV_RADO_HT_SIMARMATA.pdf"
+              class="bg-[#00396E] text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-[#002a50] transition duration-300">
+              Download CV
+            </a>
+        </div>
+
+        </div>
+      </section>
+      <section id="experience" name="experience" class="w-full md:min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Experience</h2>
+        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] w-full group">
+            <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
+              <img src="./assets/img/dsi.webp" class="border rounded-lg w-36" alt="data sains inteknova"/>
+              <div>
+                <h3 class="text-sm font-bold">Data Sains Inteknova</h3>
+                <h4 class="text-sm font-base">Software Engineer</h4>
+                <h5 class="text-xs font-thin">March 2022 - now</h5>
               </div>
-            </button>
+            </div>
+            <ul class="list-disc text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block">
+              <li><b>Metamine :</b> Fullstack | IoT | Android</li>
+              <li><b>Kasku :</b> Flutter-based Android</li>
+              <li><b>Deposito Syariah :</b> Backend</li>
+              <li><b>Market Analis :</b> Fullstack</li>
+              <li><b>Patungan Properti :</b> Fullstack</li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] group">
+            <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
+              <img src="./assets/img/insoft.webp" class="border rounded-lg w-36" alt="insoft"/>
+              <div>
+                <h3 class="text-sm font-bold">Insoft Asia</h3>
+                <h4 class="text-sm font-base">Software Engineer</h4>
+                <h5 class="text-xs font-thin">March 2021 - February 2022</h5>
+              </div>
+            </div>
+            <ul class="list-disc text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block">
+              <li><b>IPTV :</b> Fullstack</li>
+              <li><b>POS :</b> Fullstack</li>
+              <li><b>Booking Engine :</b> Fullstack</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col justify-center items-center bg-[#00396E] border border-t-4 border-l-2 rounded-lg p-8 shadow-md min-h-[320px] group">
+            <div class="flex flex-col lg:flex-row justify-center items-center text-center md:text-start space-x-2 w-full group-hover:hidden">
+              <img src="./assets/img/pentasi.png" class="border rounded-lg w-36" alt="pentasi"/>
+              <div>
+                <h3 class="text-sm font-bold">Pentasi</h3>
+                <h4 class="text-sm font-base">Software Engineer Jr.</h4>
+                <h5 class="text-xs font-thin">August 2020 - January 2021</h5>
+              </div>
+            </div>
+            <ul class="list-disc text-sm p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block">
+              <li><b>MAD Kebudayaan :</b> Backend</li>
+            </ul>
+          </div>
+          
+        </div>
+      </section>
+      <section id="projects" name="projects" class="w-full md:min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">Projects</h2>
+        <div class="max-w-7xl grid md:grid-cols-3 gap-4 py-2 px-8">
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/patunganproperti.webp" alt="Patungan Property">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Patungan Properti</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Patungan Properti is a digital platform that enables collective property investment through a community-based model. This project is designed to provide wider access for people to invest in the property sector without requiring a large capital. Through a transparent and secure system, the platform connects investors with promising property opportunities.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://www.patunganproperti.com/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/market.webp" alt="Market Analys">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Market Analys</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Market Analis is a platform designed to provide comprehensive and in-depth market data analysis. This project aims to assist users, both individuals and businesses, in understanding market trends, making better business decisions, and enhancing competitiveness through accurate and relevant data.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://depositosyariah.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/desya.webp" alt="Deposito Syariah">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Deposito Syariah</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Deposito Syariah are term deposit products managed based on Islamic Sharia principles. These deposits offer fair and transparent returns without usury, with profits derived from halal business activities. Ideal for individuals seeking to invest their funds safely in accordance with Sharia values, Deposito Syariah provide competitive returns and guaranteed fund security. With various maturity options, Deposito Syariah are a profitable investment solution aligned with Islamic financial principles.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://depositosyariah.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/kasku.webp" alt="Kasku">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">KASKU</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">KASKU is a dynamic payment application designed for businesses, available on both Android and web platforms. It streamlines financial transactions, offering a seamless and efficient payment experience for companies of all sizes. With KASKU, managing corporate payments becomes easier and more intuitive, empowering businesses to focus on growth and innovation.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://www.kasku.co.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/metamine.webp" alt="Metamine">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Data Sains Inteknova
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">Metamine</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Metamine is a cutting-edge real-time vehicle monitoring application. It provides comprehensive tracking and management features, allowing users to monitor vehicle locations, performance, and status in real-time. Designed for both personal and commercial use, Metamine enhances vehicle security and efficiency by offering instant alerts and detailed reports. With Metamine, you can ensure your vehicles are always under your control, optimizing operations and ensuring peace of mind.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://metamine.datasains.co.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/iptv.webp" alt="iptv">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Insoft Asia
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">IPTV</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">This IPTV solution for hotels is designed to enhance the guest experience by offering a comprehensive entertainment and service platform on Android TV. Guests can enjoy a wide range of live TV channels, on-demand movies, and streaming content directly on their in-room TVs. Additionally, the IPTV system allows guests to conveniently order hotel services such as room service, spa appointments, and housekeeping through an intuitive interface. This integrated solution not only provides top-notch entertainment but also streamlines service requests, ensuring a seamless and enjoyable stay for hotel guests. Transform your hotel into a modern, tech-savvy destination with this advanced IPTV system.</p>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/pos_insoft.webp" alt="pos">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Insoft Asia
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">POS System</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">A hotel POS system helps improve guest satisfaction, streamline operations, and increase revenue by providing a centralized platform for managing various aspects of hotel business.</p>
+            </div>
+          </div>
+          <div
+            class="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="relative">
+              <img class="w-full object-cover" src="./assets/img/mad.webp" alt="Mad Kebudayaan">
+              <div class="absolute bottom-0 right-0 bg-teal-500 text-white px-2 py-1 m-2 rounded-md text-sm font-semibold">
+                Pentasi
+              </div>
+            </div>
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">MAD Kebudayaan</h2>
+              <p class="text-xs text-gray-600 text-justify mb-4">Manajemen Aset Digital (MAD) Kebudayaan is a system for storing, organizing, and searching for digital cultural assets within the Directorate General of Culture's environment. With an integrated system, Digital Cultural Asset Management is a solution for the organization, management, and utilization of digital cultural assets.</p>
+              <div class="flex justify-center items-center">
+                <a href="https://mad-kebudayaan.kemdikbud.go.id/" class="px-4 py-2 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out" target="_blank" rel="follow noopener noreferrer">
+                  View
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="mb-10 flex w-1/2 items-center justify-center md:block hidden"
-        >
-          <img
-            alt="radomen"
-            width="600"
-            height="600"
-            src="./assets/img/radomen.png"
-          />
-        </div>
       </section>
-      <section id="about" name="about" class="px-10 md:px-40 mb-10">
-        <div class="text-center"><p class="font-semibold text-2xl mb-1 text-blue-500 dark:text-amber-400">About</p></div>
-        <p class="text-justify text-md mb-3 leading-7 text-zinc-600 dark:text-zinc-300">
-          Hi, I'm <a class="text-sky-500 dark:text-amber-400 font-semibold">Rado HT Simarmata</a>, a <a class="text-sky-500 dark:text-amber-400 font-semibold">full-stack</a> developer and <a class="text-sky-500 dark:text-amber-400 font-semibold">android</a> developer. I have been working as a web and software developer for the past 4 years.</p> 
-        <p>
-        <p class="text-justify text-md mb-3 leading-7 text-zinc-600 dark:text-zinc-300">
-          I feel comfortable working with technologies like <a class="text-sky-500 dark:text-amber-400 font-semibold">JavaScript</a>, <a class="text-sky-500 dark:text-amber-400 font-semibold">React</a>, <a class="text-sky-500 dark:text-amber-400 font-semibold">Node.js</a>, <a class="text-sky-500 dark:text-amber-400 font-semibold">Laravel</a>, <a class="text-sky-500 dark:text-amber-400 font-semibold">WordPress</a>, and many other technologies in the web ecosystem.
-        </p>
-        <p class="text-justify text-md mb-3 leading-7 text-zinc-600 dark:text-zinc-300">
-          Currently, I am working on several <a class="text-sky-500 dark:text-amber-400 font-semibold">projects</a> that will be launched soon. Additionally, I am studying <a class="text-sky-500 dark:text-amber-400 font-semibold">AI</a> for automation and <a class="text-sky-500 dark:text-amber-400 font-semibold">Flutter</a> for cross-platform app development.
-        </p>
-      </section>
-      <section id="projects" name="projects" class="px-10">
-        <div class="text-center"><p class="font-semibold text-2xl mb-1 text-blue-500 dark:text-amber-400">Projects</p></div>
-        <div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="https://depositosyariah.id/" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="depositosyariah" width="400" height="400" src="./assets/img/desya.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">Deposito Syariah</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">Deposito Syariah are term deposit products managed based on Islamic Sharia principles. These deposits offer fair and transparent returns without usury, with profits derived from halal business activities. Ideal for individuals seeking to invest their funds safely in accordance with Sharia values, Deposito Syariah provide competitive returns and guaranteed fund security. With various maturity options, Deposito Syariah are a profitable investment solution aligned with Islamic financial principles.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#Laravel</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#React</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#PaymentGateway</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="https://www.kasku.co.id/" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="kasku" width="400" height="400" src="./assets/img/kasku.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">KASKU</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">KASKU is a dynamic payment application designed for businesses, available on both Android and web platforms. It streamlines financial transactions, offering a seamless and efficient payment experience for companies of all sizes. With KASKU, managing corporate payments becomes easier and more intuitive, empowering businesses to focus on growth and innovation.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#Svelte</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Javasrcipt</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#ExpressJs</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Flutter</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#PaymentGateway</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="http://fms.datasains.co.id/" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="metamine" width="400" height="400" src="./assets/img/metamine.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">METAMINE</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">Metamine is a cutting-edge real-time vehicle monitoring application. It provides comprehensive tracking and management features, allowing users to monitor vehicle locations, performance, and status in real-time. Designed for both personal and commercial use, Metamine enhances vehicle security and efficiency by offering instant alerts and detailed reports. With Metamine, you can ensure your vehicles are always under your control, optimizing operations and ensuring peace of mind.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#Svelte</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Javasrcipt</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#ExpressJs</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Android</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#IoT</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="#" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="iptv" width="400" height="400" src="./assets/img/iptv.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">IPTV</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">This IPTV solution for hotels is designed to enhance the guest experience by offering a comprehensive entertainment and service platform on Android TV. Guests can enjoy a wide range of live TV channels, on-demand movies, and streaming content directly on their in-room TVs. Additionally, the IPTV system allows guests to conveniently order hotel services such as room service, spa appointments, and housekeeping through an intuitive interface. This integrated solution not only provides top-notch entertainment but also streamlines service requests, ensuring a seamless and enjoyable stay for hotel guests. Transform your hotel into a modern, tech-savvy destination with this advanced IPTV system.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#Android</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Java</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="#" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="POS" width="400" height="400" src="./assets/img/pos_insoft.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">POS</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">A hotel POS system helps improve guest satisfaction, streamline operations, and increase revenue by providing a centralized platform for managing various aspects of hotel business.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#CodeIgniter</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#DevExtreme</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-          <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-            <article data-testid="card" class="rounded-xl bg-white dark:bg-gray-900 p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
-              <a href="https://mad-kebudayaan.kemdikbud.go.id/" target="__blank">
-                <div class="flex items-end overflow-hidden rounded-xl">
-                  <img alt="POS" width="400" height="400" src="./assets/img/mad.png">
-                </div>
-                <div class="mt-1 p-2">
-                  <h3 class="text-xl font-semibold text-blue-500 dark:text-amber-400">MAD Kebudayaan</h3>
-                  <p class="text-zinc-600 dark:text-zinc-300 text-xs text-justify">Manajemen Aset Digital (MAD) Kebudayaan is a system for storing, organizing, and searching for digital cultural assets within the Directorate General of Culture's environment. With an integrated system, Digital Cultural Asset Management is a solution for the organization, management, and utilization of digital cultural assets.</p>
-                  <div class="mt-2 flex w-2/3 flex-row flex-wrap justify-between">
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#Vue</span><span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300 lg:py-1">#Wso2</span>
-                    <span class="inline-block rounded py-2 text-xs text-zinc-600 dark:text-zinc-300  lg:py-1">#ElasticSearch</span>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-        </div>
-      </section>
-      <section id="skills" name="skills" class="flex flex-col justify-center items-center mb-10">
-        <div class="text-center"><p class="font-semibold text-2xl mb-1 text-blue-500 dark:text-amber-400">Tools & Skills</p></div>
-        <div class="flex flex-wrap justify-center">
-          <img alt="javascript" src="./assets/img/tools/js.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="typescript" src="./assets/img/tools/ts.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="nodejs" src="./assets/img/tools/nodejs.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="expressjs" src="./assets/img/tools/express.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="react" src="./assets/img/tools/react.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="laravel" src="./assets/img/tools/laravel.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="flutter" src="./assets/img/tools/flutter.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="vuejs" src="./assets/img/tools/vue.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="codeigniter" src="./assets/img/tools/ci.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="svelte" src="./assets/img/tools/svelte.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="py" src="./assets/img/tools/py.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="wso2" src="./assets/img/tools/wso2.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="redis" src="./assets/img/tools/redis.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="elk" src="./assets/img/tools/elk.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-          <img alt="github" src="./assets/img/tools/github.png" class="m-5 h-8 sm:h-12 md:h-16 lg:h-20 xl:h-24">
-        </div>
-        
-        
-      </section>
-      <section id="contact" name="contact" class="flex flex-col justify-center items-center mb-10">
-        <p class="text-xl text-sky-500 dark:text-amber-500 mb-5" >
-          Follow me
-        </p>
-        <ul class="flex gap-4 sm:gap-8">
-          <a
-            href="https://github.com/radosimarmata"
-            target="__blank"
-            class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 shadow-sm p-4 duration-300"
-            ><i class="text-xl sm:text-2xl md:text-3xl"
-              ><svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                ></path></svg></i></a
-          >
-          <a
-            href="https://www.linkedin.com/in/radohtsimarmata"
-            target="__blank"
-            class="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900 shadow-sm p-4 duration-300"
-            ><i class="text-xl sm:text-2xl md:text-3xl"
-              ><svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle></svg></i></a
-          ></a>
-        </ul>
+      <section id="skills" name="skills" class="w-full md:min-h-screen flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-[#00396E] font-bold p-8">SKILL</h2>
       </section>
     </main>
+    <footer class="bg-header text-sm text-center">
+      <div class="mx-auto w-full max-w-7xl p-4">
+        <div class="flex flex-col md:flex-row md:px-10 justify-between space-y-8 md:space-y-0">
+          <div class="md:w-1/3 px-4">
+            <h1 class="text-lg">Rado's Portfolio</h1>
+            <p>Thank you for visiting my personal portfolio website.</p>
+          </div>
+          <div class="md:w-1/3 px-4">
+            <h1 class="text-lg">Link</h1>
+            <ul class="space-y-2">
+              <li>
+                <a href="/#home" class="hover:underline hover:text-yellow-500 cursor-pointer">Home</a>
+              </li>
+              <li>
+                <a href="/#about" class="hover:underline cursor-pointer">About</a>
+              </li>
+              <li>
+                <a href="/#experience" class="hover:underline cursor-pointer">Experience</a>
+              </li>
+              <li>
+                <a href="/#projects" class="hover:underline cursor-pointer">Projects</a>
+              </li>
+              <li>
+                <a href="/#skills" class="hover:underline cursor-pointer">Skills</a>
+              </li>
+              <li>
+                <a href="/#contact" class="hover:underline cursor-pointer">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:w-1/3 px-4">
+            <h1 class="text-lg">Contact</h1>
+            <ul class="space-y-2">
+              <li class="flex justify-center items-center space-x-2">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <a href="https://wa.me/6282175123834" class="hover:underline" target="_blank" rel="follow noopener noreferrer">+62 821 7512 3834 </a>
+              </li>
+              <li class="flex justify-center items-center space-x-2">
+                <i class="far fa-envelope text-lg"></i>
+                <a href="mailto:simarmatarado@gmail.com" class="hover:underline">simarmatarado@gmail.com</a>
+              </li>
+              <li class="flex justify-center items-center space-x-2">
+                <i class="fab fa-github text-lg"></i>
+                <a href="https://github.com/radosimarmata" class="hover:underline" target="_blank" rel="follow noopener noreferrer">github.com/radosimarmata</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./assets/js/index.js"></script>
 </html>
