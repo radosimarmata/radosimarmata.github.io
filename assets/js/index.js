@@ -1,11 +1,14 @@
-const options = {
-  strings: ["a Web Developer","an Android Developer","experienced in IoT Development", "a Software Engineer"],
-  typeSpeed: 50,
-  backSpeed: 30,
-  loop: true
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const options = {
+    strings: ["a Web Developer", "an Android Developer", "experienced in IoT Development", "a Software Engineer"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  };
 
-new Typed("#typed-output", options);
+  new Typed("#typed-output", options);
+});
+
 
 const skills = [
   { href: "https://www.javascript.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "javascript", src: "./assets/img/tools/js.webp" },
