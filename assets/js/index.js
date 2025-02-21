@@ -1,5 +1,5 @@
-/* global Typed */
-const types = new Typed("#typed-output", {
+/* global typed */
+const typed = new Typed("#typed-output", {
   strings: ["a Web Developer", "an Android Developer", "experienced in IoT Development", "a Software Engineer"],
   typeSpeed: 50,
   backSpeed: 30,
