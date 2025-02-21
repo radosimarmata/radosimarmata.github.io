@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* global Typed */
-const typed = new Typed("#typed-output", {
+void new Typed("#typed-output", {
   strings: ["a Web Developer", "an Android Developer", "experienced in IoT Development", "a Software Engineer"],
   typeSpeed: 50,
   backSpeed: 30,
