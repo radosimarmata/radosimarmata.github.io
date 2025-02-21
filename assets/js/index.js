@@ -1,27 +1,3 @@
-// tailwind.config = {
-//   darkMode: 'selector',
-//   theme: {
-//     extend: {},
-//   },
-// };
-
-// $('#download-cv').on('click', (e) => {
-//   const link = document.createElement('a');
-//   link.href = './assets/document/CV_RADO_HT_SIMARMATA.pdf';
-//   link.download = 'CV_RADO_HT_SIMARMATA.pdf';
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
-// });
-
-// document.getElementById("menunav").onclick = function toggleMenu() {
-//   const navToggle = document.getElementsByClassName("toggle");
-//   for (let i = 0; i < navToggle.length; i++) {
-//     navToggle.item(i).classList.toggle("hidden");
-//   }
-// };
-
-
 const options = {
   strings: ["a Web Developer","an Android Developer","experienced in IoT Development", "a Software Engineer"],
   typeSpeed: 50,
@@ -29,7 +5,7 @@ const options = {
   loop: true
 };
 
-const typed = new Typed("#typed-output", options);
+new Typed("#typed-output", options);
 
 const skills = [
   { href: "https://www.javascript.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "javascript", src: "./assets/img/tools/js.webp" },
@@ -38,8 +14,8 @@ const skills = [
   { href: "https://expressjs.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "expressjs", src: "./assets/img/tools/express.webp" },
   {  href: "https://www.electronjs.org/", target: "_blank", rel: "follow noopener noreferrer", alt: "electronjs", src: "./assets/img/tools/electron.webp" },
   { href: "https://react.dev/", target: "_blank", rel: "follow noopener noreferrer", alt: "react", src: "./assets/img/tools/react.webp" },
-  { href: "https://laravel.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "react", alt: "laravel", src: "./assets/img/tools/laravel.webp" },
-  { href: "https://flutter.dev/", target: "_blank", rel: "follow noopener noreferrer", alt: "react", alt: "flutter", src: "./assets/img/tools/flutter.webp" },
+  { href: "https://laravel.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "laravel", src: "./assets/img/tools/laravel.webp" },
+  { href: "https://flutter.dev/", target: "_blank", rel: "follow noopener noreferrer", alt: "flutter", src: "./assets/img/tools/flutter.webp" },
   { href: "https://vuejs.org/", target: "_blank", rel: "follow noopener noreferrer", alt: "vuejs", src: "./assets/img/tools/vue.webp" },
   { href: "https://www.codeigniter.com/", target: "_blank", rel: "follow noopener noreferrer", alt: "codeigniter", src: "./assets/img/tools/ci.webp" },
   { href: "https://svelte.dev/", target: "_blank", rel: "follow noopener noreferrer", alt: "svelte", src: "./assets/img/tools/svelte.webp" },
@@ -57,7 +33,6 @@ const skills = [
 ];
 
 const section = document.querySelector("#skills");
-const h2 = section.querySelector("h2");
 
 const skillContainer = document.createElement("div");
 skillContainer.className = "flex flex-wrap justify-center";
